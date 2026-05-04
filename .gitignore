@@ -1,0 +1,39 @@
+# ── Uploads (user-generated content, never commit) ────────────────
+# Create the directory manually: mkdir -p images/avatars && chmod 755 images/avatars
+images/avatars/
+
+# ── Bootstrap local assets (downloaded via bootstrap/download.sh) ─
+bootstrap/*.css
+bootstrap/*.js
+bootstrap/fonts/
+
+# ── Environment & sensitive config ────────────────────────────────
+.env
+.env.local
+.env.*.local
+
+# ── IDE & editor files ────────────────────────────────────────────
+.claude/
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ── OS generated files ────────────────────────────────────────────
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# ── PHP cache & logs ──────────────────────────────────────────────
+*.log
+/logs/
+/cache/
+/tmp/
+
+# ── Composer (no dependencies here, but just in case) ─────────────
+/vendor/
+composer.lock
